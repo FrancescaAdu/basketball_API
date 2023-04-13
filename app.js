@@ -9,7 +9,12 @@ app.use(express.json())
 
 // build api
 app.get('/', (req, res) => {
-    // res.send("Welcome to the basketball API")
+    res.send("Welcome to the basketball API")
+    // res.send(basketball)
+})
+
+// GET - all players
+app.get("/basketball", (req, res) => {
     res.send(basketball)
 })
 
